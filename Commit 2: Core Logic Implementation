@@ -1,0 +1,9 @@
+def extract_positive_integers(strings):
+    if not isinstance(strings, list):
+        raise TypeError("Input should be a list of strings")
+
+    positive_integers = []
+
+    for string in strings:
+        if string.isdigit():
+            positive_integers.append(int(string))
